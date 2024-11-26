@@ -1,4 +1,5 @@
 from modelos.avaliacao import Avaliacao
+from modelos.pratos import Pratos
 
 class Restaurante:
     
@@ -9,6 +10,7 @@ class Restaurante:
         self.categoria = categoria.upper()
         self._ativo = False
         self._avaliacao = []
+        self._pratos = []
         Restaurante.restaurantes.append(self)
         
     def __str__(self):
@@ -31,3 +33,7 @@ class Restaurante:
     def receber_avaliacao(self, cliente, nota):
         avaliacao = Avaliacao(cliente, nota)
         self._avaliacao.append(avaliacao)
+        
+    def listar_cardapio(self,pratos, bebidas, sobremesas):
+        pratos = Pratos(pratos, bebidas,sobremesas)
+        self._pratos.append(pratos)
