@@ -1,6 +1,5 @@
 from modelos.avaliacao import Avaliacao
-from modelos.cardapio.item_cardapio import Pratos
-
+from modelos.cardapio.prato import Prato
 class Restaurante:
     
     restaurantes = []
