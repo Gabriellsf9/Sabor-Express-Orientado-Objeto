@@ -42,15 +42,3 @@ class Restaurante:
         quantidade_de_notas = len(self._avaliacao)
         media = round(soma_das_notas / quantidade_de_notas, 1)
         return media
-        
-    def listar_cardapio(self, pratos, bebidas, sobremesas):
-        print("Cardápio:")
-        print("Pratos Principais:")
-        for prato in pratos:
-            print(f"- {prato}")
-        print("Bebidas:")
-        for bebida in bebidas:
-            print(f"- {bebida}")
-        print("Sobremesas:")
-        for sobremesa in sobremesas:
-            print(f"- {sobremesa}")    
